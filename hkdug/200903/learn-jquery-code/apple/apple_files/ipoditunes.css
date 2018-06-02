@@ -1,0 +1,201 @@
+@import url(/global/styles/skins/defaultblack.css);
+
+body { background: #000; }
+
+/* GRID */
+.grid3cola .column { width: 582px; margin-left: 15px; }
+.grid3cola .column.first,
+.grid3cola .column.last { width: 184px; }
+.grid3cola .grid3col .column { width: 184px; margin-left: 14px; }
+
+/* MAIN */
+#main h3 { font-size: 13px; color: #fff; font-weight: normal; word-spacing: -0.1em; }
+#main a { color: #fff; text-decoration: none; }
+#main a:hover { text-decoration: underline; }
+#main .more { color: #ccc; font-weight: bold; padding: 0 16px 0 0; background: url(http://images.apple.com/itunes/home/images/morearrow.png) 100% 100% no-repeat; white-space: nowrap; *position: relative; }
+#main .more:hover { color: #fff; }
+#main .sidebar { font-size: 11px; color: #ccc; }
+#main .sidebar p,
+#main .sidebar ul,
+#main .sidebar ol,
+#main .sidebar h4 { font-size: 11px; line-height: 14px; }
+#main .sidebar p,
+#main .sidebar ol { margin-bottom: 8px; }
+
+/* CONTENT */
+#content { padding: 15px 0 0; }
+
+/* BOXES */
+#main .box { background: url(http://images.apple.com/itunes/home/images/box_582bgrep.png) repeat-y; overflow: hidden; position: relative; }
+#main .sidebar .box { background: url(http://images.apple.com/itunes/home/images/box_184bgrep.png) repeat-y; }
+#main .box h2 { text-indent: -9999px; height: 25px; overflow: hidden; position: relative; margin-bottom: 0; }
+#main .padder { padding: 0 15px; }
+#main .boxcap { height: 5px; width: 100%; position: absolute; z-index: 100; bottom: 0; _bottom: -10px; left: 0; background: url(http://images.apple.com/itunes/home/images/box_582capbottom.png) no-repeat; behavior:url(/global/scripts/lib/iepngfix.htc); }
+#main .sidebar .boxcap { background: url(http://images.apple.com/itunes/home/images/box_184capbottom.png) no-repeat; }
+#main .sidebar .captop { bottom: auto; top: 0; background-image: url(http://images.apple.com/itunes/home/images/box_184captop.png); }
+
+/* DRAWERS */
+#main ul.drawers { margin: 0 !important; }
+#main .slider .drawer-handle { color: #333; font-size: 12px; padding: 5px 0; text-indent: 15px; width: 100%; background: #AAA url(http://images.apple.com/itunes/home/images/slider_handlebg.png) 0 0 no-repeat; cursor: default; }
+#main .slider .drawer-content { display: block; margin: 0; height: auto; background: #777; }
+#main .slider h3.open { background-color: #505c71; background-position: -184px 0; color: #fff; }
+
+/* TOP LISTS */
+#main .sidebar ol.toplist { margin: 0 10px 0 35px; padding-top: 10px; }
+#main .sidebar ol.toplist li { margin-bottom: 4px; }
+#main .sidebar ol.toplist li a { color: #ccc; }
+#main .sidebar ol.toplist li strong { color: #fff; }
+#main .sidebar ol.toplist li.viewall { list-style-type: none; margin-bottom: 0; }
+
+/* PRODUCT BROWSER */
+#productbrowser { width: 980px; height: 180px; background: #333 url(http://images.apple.com/itunes/home/images/productbrowser_background_20070622.jpg) no-repeat top; overflow: auto; }
+#pb-productbrowsercontainer { position: relative; width: 980px; height: 180px; margin: 0 auto; }
+#pb-productslider { top: 4px; left: 0; width: 2908px; height: 140px; position: absolute; margin: 0; padding: 0; }
+#pb-productslider .pb-productimage { float: left; width: 137px; height: 140px; position: relative; top: 0; }
+#pb-productslider .pb-productimage a { float: left; width: 100%; padding-top: 125px; overflow: hidden; color: #ccc; font-size: 11px; text-align: center; background-position: 50% 100%; background-repeat: no-repeat; }
+#pb-productslider .pb-productimage a:hover { text-decoration: none; color: #fff; }
+#pb-productslidertrack { position: absolute; top: 152px; left: 18px; width:944px; overflow: hidden; background: url(http://images.apple.com/itunes/home/images/productbrowser_scrollbar_20070622.png) no-repeat; height:19px; visibility: hidden; }
+#pb-cat1 { position: absolute; top: 0; z-index: 150; color: #fff; font-size: 11px; cursor: pointer; left: 58px; }
+#pb-cat2 { position: absolute; top: 0; z-index: 150; color: #fff; font-size: 11px; cursor: pointer; left: 195px; }
+#pb-cat3 { position: absolute; top: 0; z-index: 150; color: #fff; font-size: 11px; cursor: pointer; left: 555px; }
+#pb-productsliderhandle { position: absolute; width: 213px; height: 19px; cursor: pointer; z-index: 155; }
+#pb-productsliderhandleimage { position: absolute; width: 213px; height: 19px; background: url(http://images.apple.com/itunes/home/images/productbrowser_scroller_20070622.png) no-repeat; behavior:url(/global/scripts/lib/iepngfix.htc); cursor: pointer; z-index: 5; }
+#pb-leftarrow { position: absolute; left: 17px; top: 152px; width: 20px; height: 20px; background: transparent; z-index: 150; cursor: pointer; }
+#pb-rightarrow { position: absolute; left: 942px; top: 152px; width: 20px; height: 20px; background: transparent; z-index: 150; cursor: pointer; }
+#pb-iphone-leftarrow { position: absolute; left: 0; top: 0; height: 180px; width: 69px; z-index: 1000; cursor: pointer; background: url(http://images.apple.com/itunes/home/images/pb_arrows_04_left.png) no-repeat top; }
+#pb-iphone-rightarrow { position: absolute; left: 910px; top: 0; height: 180px; width: 69px; z-index: 100000; cursor: pointer; background: url(http://images.apple.com/itunes/home/images/pb_arrows_04_right.png) no-repeat top; }
+
+
+/* PRODUCT BROWSER SECTION COLORS */
+#pb-productbrowsercontainer .pb-catclass0 { color: #666; }
+#pb-productbrowsercontainer .pb-catclass1 { color: #777; }
+#pb-productbrowsercontainer .pb-catclass2 { color: #888; }
+#pb-productbrowsercontainer .pb-catclass3 { color: #999; }
+#pb-productbrowsercontainer .pb-catclass4 { color: #aaa; }
+#pb-productbrowsercontainer .pb-catclass5 { color: #bbb; }
+#pb-productbrowsercontainer .pb-catclass6 { color: #ccc; }
+#pb-productbrowsercontainer .pb-catclass7 { color: #ddd; }
+#pb-productbrowsercontainer .pb-catclass8 { color: #eee; }
+#pb-productbrowsercontainer .pb-catclass9 { color: #eee; }
+#pb-productbrowsercontainer .pb-catclass10 { color: #fff; }
+#pb-productbrowsercontainer .pb-catclass11 { color: #fff; }
+#pb-productbrowsercontainer #pb-cat1.pb-catclass7 { color: #fff; }
+
+/* PRODUCT BROWSER PRODUCTS */
+#pb-productslider #pb-giftcards a { background-image: url(http://images.apple.com/itunes/home/images/pb_itunes_giftcards.jpg); }
+#pb-productslider #pb-itunes a { background-image: url(http://images.apple.com/itunes/home/images/pb_itunes.jpg); }
+#pb-productslider #pb-downloaditunes a { background-image: url(http://images.apple.com/itunes/home/images/pb_itunes_download.jpg); }
+#pb-productslider #pb-ipod a { background-image: url(http://images.apple.com/itunes/home/images/pb_ipod.jpg); }
+#pb-productslider #pb-ipodu2 a { background-image: url(http://images.apple.com/itunes/home/images/pb_u2_ipod.jpg); }
+#pb-productslider #pb-ipodnano a { background-image: url(http://images.apple.com/itunes/home/images/pb_ipod_nano.jpg); }
+#pb-productslider #pb-productred a { background-image: url(http://images.apple.com/itunes/home/images/pb_ipod_nano_product_red.jpg); padding-top: 119px; line-height: 12px; }
+#pb-productslider #pb-productred a span { display: block; font-size: 9px; text-transform: uppercase; color: #ff0000; }
+#pb-productslider #pb-ipodshuffle a { background-image: url(http://images.apple.com/itunes/home/images/pb_ipod_shuffle.jpg); }
+#pb-productslider #pb-appletv a { background-image: url(http://images.apple.com/itunes/home/images/pb_apple_tv.jpg); }
+#pb-productslider #pb-ipodhifi a { background-image: url(http://images.apple.com/itunes/home/images/pb_ipod_hifi.jpg); }
+#pb-productslider #pb-ipodsock a { background-image: url(http://images.apple.com/itunes/home/images/pb_ipod_socks.jpg); }
+#pb-productslider #pb-leathercase a { background-image: url(http://images.apple.com/itunes/home/images/pb_leather_case.jpg); }
+#pb-productslider #pb-armband a { background-image: url(http://images.apple.com/itunes/home/images/pb_nano_armband.jpg); }
+#pb-productslider #pb-nikeplus a { background-image: url(http://images.apple.com/itunes/home/images/pb_nike_plus_ipod.jpg); }
+#pb-productslider #pb-cables a { background-image: url(http://images.apple.com/itunes/home/images/pb_av_connection_kit.jpg); }
+#pb-productslider #pb-nanodock a { background-image: url(http://images.apple.com/itunes/home/images/pb_ipod_nano_dock.jpg); }
+#pb-productslider #pb-universaldock a { background-image: url(http://images.apple.com/itunes/home/images/pb_universal_dock.jpg); }
+#pb-productslider #pb-cameraconnector a { background-image: url(http://images.apple.com/itunes/home/images/pb_camera_connector.jpg); }
+#pb-productslider #pb-radioremote a { background-image: url(http://images.apple.com/itunes/home/images/pb_radio_remote.jpg); }
+#pb-productslider #pb-headphones a { background-image: url(http://images.apple.com/itunes/home/images/pb_in_ear_headphones.jpg); }
+#pb-productslider #pb-poweradapter a { background-image: url(http://images.apple.com/itunes/home/images/pb_usb_power_adapter.jpg); }
+
+/* PRODUCT REPOSITIONING */
+#pb-productslider #pb-ipodsock { margin-right: -15px; }
+#pb-productslider #pb-radioremote { margin-right: -5px; }
+#pb-productslider #pb-giftcards { margin: 0 15px; }
+#pb-productslider #pb-headphones { margin: 0 -10px; }
+
+/* SHOWCASE */
+#showcase { height: 425px; overflow: hidden; margin-bottom: 15px; }
+#showcase .promo { float: left; width: 184px; height: 115px; }
+#showcase .leadpromo { clear: both; width: 582px; height: 295px; margin-bottom: 14px; }
+#showcase .last { _width: 184px !important; _float: right !important; }
+
+/* LATEST */
+#latest-ipod { height: auto; min-height: 425px; *height: 425px; margin-bottom: 15px; position: relative; overflow: hidden; z-index: 50; }
+/*#latest-ipod .drawer-content { min-height: 341px; *height: 341px; }*/
+#latest-ipod .stories { padding: 0 15px; margin: 0; }
+#latest-ipod .stories .story { padding: 10px 0 2px; background: url(http://images.apple.com/itunes/home/images/ruleinset.png) 50% 0 no-repeat; }
+#latest-ipod .stories .leadstory { background-image: none; }
+#latest-ipod .stories .leadimage { margin-bottom: 8px;}
+
+/* WHATSNEW */
+#latest-itunes { height: auto; margin-bottom: 15px; position: relative; overflow: hidden; }
+/*#latest-itunes .drawer-content { min-height: 313px; *height: 313px; }*/
+
+/* FEATURED */
+#featured .downloaditunes { padding: 12px 0 2px; }
+
+/* IPOD YOUR LIFE */
+#ipodyourlife h2 { background: url(http://images.apple.com/itunes/home/images/ipodyourlife_headerbg.png) no-repeat; }
+#ipodyourlife .drawers { margin: 0; position: relative; overflow: hidden; }
+#ipodyourlife .drawers li { display: block; z-index: 1; width: 100%; }
+#ipodyourlife .drawers img.photo { display: block; margin: 0 1px; background: #5b5b5b; }
+#ipodyourlife .drawers .handle { display: block; padding: 16px 15px 9px; height: 87px; margin-bottom: -6px; _margin-bottom: -8px; overflow: hidden; background: url(http://images.apple.com/itunes/home/images/shingles_handlebg.png) -184px 100% no-repeat; }
+#ipodyourlife .drawers .handle:hover { text-decoration: none; }
+#ipodyourlife .drawers .handle strong { display: block; font-size: 13px; color: #fff; font-weight: normal; height: 18px; white-space: nowrap; overflow: hidden; }
+#ipodyourlife .drawers .handle .description { color: #fff; height: 28px; overflow: hidden; line-height: 14px; }
+#ipodyourlife .drawers .handle .more { color: #fff; background-image: url(http://images.apple.com/itunes/home/images/morearrow_light.png); }
+#ipodyourlife .drawers li.obscured .handle { background-position: 0 100%; }
+#ipodyourlife .drawers li.obscured .handle .description { color: #ccc; }
+#ipodyourlife .drawers li.obscured .handle .more { color: #cdcdcd; background-image: url(http://images.apple.com/itunes/home/images/morearrow.png); }
+#ipodyourlife .drawers li.obscured img.photo { background: #232323; }
+
+/* VIDEOS */
+#videos { height: 501px; }
+#videos h2 { background: url(http://images.apple.com/itunes/home/images/videos_headerbg.png) no-repeat; }
+#videos .padder { padding: 0 11px; }
+#videos .nowplaying { font-size: 11px; color: #999; padding: 4px 0; margin-bottom: 0; }
+#videos .nowplaying strong { color: #ccc; }
+#videos #quicktime { position: relative; width: 560px; height: 316px; background: #000; margin: 0 auto; text-align: center; }
+#videos #quicktime .poster { cursor: pointer; _cursor: hand; }
+#videos #quicktime.loading object { width:1px !important; height:1px !important; }
+#videos .endstate { position: absolute; left: 0; top: 0; }
+#videos #videoplaylist { overflow: hidden; margin: 0 0 9px; }
+#videos #videoplaylist li { display: inline; }
+#videos #videoplaylist .button a { float: left; margin-left: 10px; width: 180px; height: 0; padding-top: 90px; overflow: hidden; background: url(http://images.apple.com/itunes/home/images/videos_playlistbg.png) no-repeat; }
+#videos #videoplaylist .button.first a { margin-left: 0; }
+#videos #videoplaylist .button.last a { float: right; }
+#videos #videoplaylist #mov-b a { background-position: -180px 0; }
+#videos #videoplaylist #mov-c a { background-position: -360px 0; }
+#videos #videoplaylist #mov-a.active a { background-position: 0 -90px; }
+#videos #videoplaylist #mov-b.active a { background-position: -180px -90px; }
+#videos #videoplaylist #mov-c.active  a { background-position: -360px -90px; }
+#videos .posterFrame {display: none;}
+
+/* END STATES */
+#videos .endstate { display: block; margin: 0; padding: 0; width: 100%; height: 100%; }
+#videos .endstate li { display: block; margin: 0; padding: 0; }
+#videos .endstate a { display: block; height: 41px; margin: 10px auto; overflow: hidden; text-indent: -9999px; behavior:url(/global/scripts/lib/iepngfix.htc); }
+#videos .endstate .replay { width: 200px; margin-top: 120px; background: url(http://images.apple.com/itunes/home/images/2007/06/endbutton_watchagain_20070611.png); }
+#videos .endstate.ratatouille { background: url(http://images.apple.com/itunes/home/images/2007/06/endframe_ratatouille_20070611.jpg); }
+#videos .endstate.ratatouille .learnmore { width: 522px; background: url(http://images.apple.com/itunes/home/images/2007/06/endbutton_ratatouille_20070611.png); }
+#videos .endstate.ipoditunes { background: url(http://images.apple.com/itunes/home/images/2007/06/endframe_itunesad_20070611.jpg); }
+#videos .endstate.appletv { background: url(http://images.apple.com/itunes/home/images/2007/06/endframe_appletvad_20070611.jpg); }
+#videos .endstate.appletv .learnmore { width: 300px; background: url(http://images.apple.com/itunes/home/images/2007/06/endbutton_appletv_20070611.png); }
+
+/* VIDEO CONTROLLER */
+#videos .ACQuicktimeController { visibility: hidden; padding-top: 6px; padding-bottom: 6px; }
+#videos .ACQuicktimeController.active { visibility: visible; }
+#videos .ACQuicktimeController div.control { width: 18px; height: 18px; background: url(http://images.apple.com/itunes/home/images/playpause_dark.png) 6px 0 no-repeat; }
+#videos .ACQuicktimeController div.control.pause { background: url(http://images.apple.com/itunes/home/images/playpause_dark.png) 6px -18px no-repeat; }
+#videos .ACQuicktimeController div.sliderPanel { width: 532px; left: 24px; }
+#videos .ACQuicktimeController div.sliderPanel div.track { border: 1px solid #4f4f4f; background-color: #2c2c2c; width: 532px; height: 6px; }
+#videos .ACQuicktimeController div.sliderPanel div.track div.loadedProgress { background-color: #4f4f4f; height: 6px; }
+#videos .ACQuicktimeController div.sliderPanel div.track div.trackProgress { background-color: #000; height: 6px; }
+#videos .ACQuicktimeController div.sliderPanel div.track div.playHead { background-image: url(http://images.apple.com/itunes/home/images/pointer_dark.png); height: 13px; }
+
+/* GIFT CARDS */
+#giftcards { min-height: 501px; *height: 501px; }
+#giftcards h2 { background: url(http://images.apple.com/itunes/home/images/giftcards_headerbg.png) no-repeat; }
+#giftcards .itunescards { padding: 6px 15px 2px; background: url(http://images.apple.com/itunes/home/images/ruleinset.png) 50% 100% no-repeat; margin-bottom: 10px; }
+#giftcards .engraving img { margin-bottom: -10px; }
+
+/* FOOTER */
+#globalfooter p.sosumi { float: right; margin-top: -18px; }

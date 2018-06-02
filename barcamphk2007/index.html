@@ -1,0 +1,441 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>7 ways to write "Better" HTML</title>
+<!-- metadata -->
+<meta name="generator" content="S5" />
+<meta name="version" content="S5 1.1" />
+<meta name="presdate" content="20071215" />
+<meta name="author" content="Ca Phung Ung" />
+<meta name="company" content="Yelotofu" />
+<!-- configuration parameters -->
+<meta name="defaultView" content="slideshow" />
+<meta name="controlVis" content="hidden" />
+<!-- style sheet links -->
+<link rel="stylesheet" href="ui/default/slides.css" type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="ui/default/outline.css" type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="ui/default/print.css" type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="ui/default/opera.css" type="text/css" media="projection" id="operaFix" />
+<!-- S5 JS -->
+<script src="ui/default/slides.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="layout">
+<div id="controls"><!-- DO NOT EDIT --></div>
+<div id="currentSlide"><!-- DO NOT EDIT --></div>
+<div id="header"></div>
+<div id="footer">
+<h1>BarCamp Hong Kong 2007</h1>
+<h2>7 ways to write "Better" HTML</h2>
+</div>
+
+</div>
+
+
+<div class="presentation">
+
+<div class="slide">
+<h1>7 ways to write "Better" HTML</h1>
+<h2>+7 ways it will benefit your online business</h2>
+<h3>Ca Phun Ung</h3>
+<h4><a href="http://yelotofu.com">Yelotofu</a></h4>
+</div>
+
+
+<div class="slide">
+<h1>Introduction</h1>
+<h2>Some definitions:</h2>
+<ul>
+	<li>"Better" meaning semantically rich and standards compliant.</li>
+	<li>HTML 4.x and XHTML1.x</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Introduction</h1>
+<ul>
+	<li>HTML is an age old topic</li>
+	<li>Hong Kong needs more awareness of Web Standards</li>
+	<li>Presentation purpose - Spark interest</li>
+	<li><em>Please feel free to butt in!</em></li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>7 Ways to write "Better" HTML</h1>
+<ol>
+<li>Use a DOCTYPE declaration</li>
+<li>Don't Abuse the Good!</li>
+<li>Use the Right Tag for the Right Job</li>
+<li>Avoid Bed and BReakfast markup</li>
+<li>Headings are important</li>
+<li>Don't forget ALT text!</li>
+<li>Use CSS for presentation</li>
+</ol>
+</div>
+
+<div class="slide">
+<h1>1. Use a DOCTYPE declaration</h1>
+<pre><code>
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+</code></pre>
+<ul>
+	<li>Strict DTD - standards mode</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>1. Use a DOCTYPE declaration</h1>
+<pre><code>
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+</code></pre>
+<ul>
+	<li>Transitional DTD - almost-standards mode</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>1. Use a DOCTYPE declaration</h1>
+<pre><code>
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"&gt;
+</code></pre>
+<ul>
+	<li>Frameset DTD - when using frames to layout a document</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>1. Use a DOCTYPE declaration</h1>
+<ul class="incremental">
+	<li>DOCTYPEs let user agents &amp; validators know the DTD of the document</li>
+	<li>DOCTYPE switching - "quirks mode" and "standards mode"</li>
+	<li>Infamous Box model issue:
+		<ul>
+			<li>W3C model - Box width = the containing content</li>
+			<li>IE 5.x/IE6 quirks mode - Box width = borders + padding + content</li>
+		</ul>
+	</li>
+	<li>For more info, see:
+		<ul>
+			<li><cite><a href="http://www.alistapart.com/articles/doctype/">Fix Your Site With the Right DOCTYPE!</a></cite> &mdash; <cite><a href="http://www.zeldman.com/">Jeffrey Zeldman</a></cite></li>
+			<li><cite><a href="http://meyerweb.com/eric/dom/dtype/dtype-grid.html">DOCTYPE grid</a></cite> &mdash; <cite><a href="">Eric A. Meyer</a></cite></li>
+			<li><cite><a href="http://hsivonen.iki.fi/doctype/">Activating the right layout mode using the doctype</a></cite> &mdash; <cite><a href="http://hsivonen.iki.fi/author/">Henri Sivonen</a></cite></li>
+		</ul>
+	</li>
+</ul>
+</div>
+
+<div class="slide">
+<h1>2. Don't Abuse the Good!</h1>
+<ul>
+	<li>HTML is simple</li>
+	<li>Easy enough to learn by example</li>
+	<li>Therefore prone to exploitation</li>
+	<li>Most abused are TABLEs and BLOCKQUOTEs</li>
+</ul>
+</div>
+
+<div class="slide">
+<h1>2. Don't Abuse the Good&mdash;TABLEs</h1>
+<ul class="incremental">
+	<li>Throw away your TABLEs</li>
+	<li>It adds unnecessary clutter</li>
+	<li>It suffocates your content</li>
+	<li>For more, see:
+ 		<ul>
+			<li><cite><a href="http://www.stopdesign.com/articles/throwing_tables/">Throwing Tables Out the Window</a></cite> &mdash; <cite><a href="http://www.stopdesign.com/">Bowman</a></cite></li>
+		  <li><cite><a href="http://www.hotdesign.com/seybold/">Why tables for layout is stupid</a></cite> &mdash; <cite>Merikallio &amp; Pratt</cite></li>
+		</ul>
+	</li>
+ </ul>
+</div>
+
+
+<div class="slide">
+<h1>2. Don't Abuse the Good&mdash;TABLEs</h1>
+<ul>
+	<li>But keep the "data tables"</li>
+</ul>
+<pre><code>
+<table border="1">
+ <tr><th></th>
+     <th>Guthrie</th>
+     <th>MacFarlane</th></tr>
+ <tr><th>1.30pm</th>
+     <td>Brett, John, David</td>
+     <td>Roger</td></tr>
+ <tr><th>2.15pm</th>
+     <td>Dean</td>
+     <td>Lisa, Peter</td></tr>
+</table>
+</code></pre>
+</div>
+
+
+<div class="slide">
+<h1>2. Don't Abuse the Good&mdash;BLOCKQUOTEs</h1>
+<ul class="incremental">
+	<li>&lt;blockquote&gt; != indentation</li>
+	<li>&lt;blockquote&gt; = a <em>block</em> of <em>quote</em>s</li>
+	<li>&lt;blockquote&gt; always starts with &lt;p&gt;</li>
+	<li>Example&hellip;</li>
+</ul>
+</div>
+
+<div class="slide">
+<h1>2. Don't Abuse the Good&mdash;BLOCKQUOTEs</h1>
+<pre><code>
+&lt;p&gt;      Eric Meyer        wrote:&lt;/p&gt;
+
+&lt;p&gt;
+ What's so interesting to me is that the guys who decided
+ to focus on the positive went out and did something;
+ those who want to mix in the negative seem to have
+ nothing to offer except complaints.
+&lt;/p&gt;
+
+&lt;p&gt;An excellent contrast between those who want to
+build new things and those who want to tear them down.
+&lt;/p&gt;
+</code></pre>
+</div>
+
+<div class="slide">
+<h1>2. Don't Abuse the Good&mdash;BLOCKQUOTEs</h1>
+<pre><code>
+&lt;p&gt;<span class="added">&lt;cite&gt;</span>Eric Meyer<span class="added">&lt;/cite&gt;</span> wrote:&lt;/p&gt;
+<span class="added">&lt;blockquote&gt;</span>
+&lt;p&gt;
+ What's so interesting to me is that the guys who decided
+ to focus on the positive went out and did something;
+ those who want to mix in the negative seem to have
+ nothing to offer except complaints.
+&lt;/p&gt;
+<span class="added">&lt;/blockquote&gt;</span>
+&lt;p&gt;An excellent contrast between those who want to
+build new things and those who want to tear them down.
+&lt;/p&gt;
+</code></pre>
+</div>
+
+
+<div class="slide">
+<h1>2. Don't Abuse the Good&mdash;BLOCKQUOTEs</h1>
+<pre><code>
+&lt;p&gt;&lt;cite&gt;Eric Meyer&lt;/cite&gt; wrote:&lt;/p&gt;
+&lt;blockquote <span class="added">cite="<abbr title="http://meyerweb.com/eric/thoughts/2005/03/11/social-protocols/"><a href="http://meyerweb.com/eric/thoughts/2005/03/11/social-protocols/">http://meyerweb.../social-protocols/</a></abbr>"</span>&gt;
+&lt;p&gt;
+ What's so interesting to me is that the guys who decided
+ to focus on the positive went out and did something;
+ those who want to mix in the negative seem to have
+ nothing to offer except complaints.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;An excellent contrast between those who want to
+build new things and those who want to tear them down.
+&lt;/p&gt;
+</code></pre>
+</div>
+
+
+
+<div class="slide">
+<h1>2. Don't Abuse the Good&mdash;BLOCKQUOTEs</h1>
+<pre><code class="text"><span class="complete">
+&lt;p&gt;&lt;cite&gt;</span>Eric Meyer<span class="complete">&lt;/cite&gt;</span> wrote:<span class="complete">&lt;/p&gt;
+&lt;blockquote cite="<abbr title="http://meyerweb.com/eric/thoughts/2005/03/11/social-protocols/"><a href="http://meyerweb.com/eric/thoughts/2005/03/11/social-protocols/">http://meyerweb.../social-protocols/</a></abbr>"&gt;
+&lt;p&gt;</span>
+ What's so interesting to me is that the guys who decided
+ to focus on the positive went out and did something;
+ those who want to mix in the negative seem to have
+ nothing to offer except complaints.
+<span class="complete">&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;</span>An excellent contrast between those who want to
+build new things and those who want to tear them down.
+<span class="complete">&lt;/p&gt;</span>
+</code></pre>
+</div>
+
+
+<div class="slide">
+<h1>3. Use the Right Tag for the Right Job</h1>
+<ul class="incremental">
+	<li>Avoid &lt;b&gt; &lt;br/&gt; &lt;i&gt; &lt;sub&gt; &lt;sup&gt;</li>
+	<li>&lt;h1&gt; != big and bold</li>
+	<li>&lt;em&gt; != make this italic</li>
+	<li>&lt;blockquote&gt; != indent this</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>3. Use the Right Tag for the Right Job</h1>
+<ul class="incremental">
+	<li>&lt;p&gt;This is a Paragraph&lt;/p&gt;</li>
+	<li>&lt;h1&gt;Most&lt;/h1&gt; to &lt;h6&gt;Least&lt;/h6&gt; important headings</li>
+	<li>&lt;em&gt;I'm angry!&lt;/em&gt;</li>
+	<li>&lt;strong&gt;I'm very angry!&lt;/strong&gt;</li>
+	<li>&lt;em&gt;&lt;strong&gt;I'm super angry!&lt;/strong&gt;&lt;/em&gt;</li>
+	<li>&lt;ul&gt; vs. &lt;ol&gt; vs. &lt;dl&gt;</li>
+</ul>
+</div>
+
+<div class="slide">
+<h1>4. Avoid Bed and BReakfast markup</h1>
+<ul>
+	<li><cite><a href="http://tantek.com/log/2002/10.html#L20021022t1432">&lt;b&gt;ed and &lt;br&gt;eakfast markup &mdash;</a></cite> <cite><a href="http://www.tantek.com/">Tantek &Ccedil;elik</a></cite></li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>4. Avoid Bed and BReakfast markup</h1>
+<pre><code>
+&lt;b&gt;cool stuff recently discovered&lt;/b&gt;
+&lt;br&gt;
+so and so pointed me to this site where they've
+introduced this amazing new product.
+when can i get one?
+&lt;br&gt;
+also cool is this new service offered by example.net.
+this will save me so much time in my work.
+&lt;br&gt;
+</code></pre>
+</div>
+
+
+<div class="slide">
+<h1>4. Avoid Bed and BReakfast markup</h1>
+<pre><code>
+&lt;div class="entry"&gt;
+&lt;h2>cool stuff discovered&lt;/h2&gt;
+&lt;p&gt;
+so and so pointed me to this site where they've
+introduced this amazing new product.
+when can i get one?
+&lt;/p&gt;
+&lt;p&gt;
+also cool is this new service offered by example.net.
+this will save me so much time in my work.
+&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+
+
+<div class="slide">
+<h1>5. Headings are important</h1>
+<ul class="incremental">
+	<li>There are six levels</li>
+	<li>Where to start your &lt;h1&gt;?</li>
+	<li>Many &lt;h1&gt;s are allowed</li>
+	<li>Do not skip levels</li>
+	<li>User the Web developer toolbar:
+		<ul>
+			<li>Information &gt; View Document Outline</li>
+		</ul>
+	</li>
+</ul>
+</div>
+
+<div class="slide">
+<h1>5. Headings are important</h1>
+<ul class="incremental">
+	<li>Headings are good for accessibility</li>
+	<li>Headings are good for SEO</li>
+	<li>Headings are much better than &lt;div&gt;s or &lt;span&gt;s</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>6. Don't forget ALT text!</h1>
+<ul>
+	<li>Bad: <code>&lt;img src="car_photo.jpg"&gt;</code></li>
+	<li>Acceptable: <code>&lt;img src="car_photo.jpg" alt=""&gt;</code></li>
+	<li>Good: <code>&lt;img src="car_photo.jpg" alt="my dream car"&gt;</code></li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>6. Don't forget ALT text!</h1>
+<ul>
+	<li>It's a basic requirement for WAI level 1 compliance</li>
+	<li>Good for text based browsers and screen readers</li>
+	<li>Additionally, use the title attribute to help users predict where they are going</li>
+	<li>For more info, see:
+		<ul>
+			<li><cite><a href="http://htmlhelp.com/feature/art3.htm">Use of <code>ALT</code> texts in <code>IMG</code>s</a></cite> &mdash; <cite><a href="http://htmlhelp.com/">Web Design Group</a></cite></li>
+		</ul>
+	</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>7. Use CSS for presentation</h1>
+<ul class="incremental">
+	<li>CSS complements HTML</li>
+	<li>Best way to learn is by example</li>
+	<li>CSS Frameworks:
+		<ul>
+			<li><a href="http://code.google.com/p/blueprintcss/">Blueprint CSS Framework</a></li>
+			<li><a href="http://developer.yahoo.com/yui/">YUI Library</a></li>
+		</ul>
+	</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>7 ways it will benefit your online business</h1>
+<ol class="incremental">
+<li>Your pages will load faster</li>
+<li>Lower your hosting costs</li>
+<li>Lower the cost of a redesign</li>
+<li>Helps to maintain visual consistency</li>
+<li>Better search engine results</li>
+<li>More accessible to all viewers and user agents</li>
+<li>It's a winner!</li>
+</ol>
+</div>
+
+<div class="slide">
+<h1>Thank you!</h1>
+<ul>
+	<li>Articles of interest:
+		<ul>
+			<li><cite><a href="http://www.xml.com/pub/a/w3j/s1.people.html">The Web is Ruined and I Ruined It</a></cite> &mdash; <cite><a href="http://www.xml.com/pub/au/41">David Siegel</a></cite></li>
+			<li><cite><a href="http://www.alistapart.com/articles/frameworksfordesigners/">Frameworks for Designers</a></cite> &mdash; <cite><a href="http://www.alistapart.com/authors/c/jeffcroft">Jeff Croft</a></cite></li>
+		</ul>
+	</li>
+	<li>Reference books:
+		<ul>
+			<li><a href="http://htmlmastery.com/">HTML Mastery</a> by Paul Haine</li>
+			<li><a href="http://www.cssmastery.com/">CSS Mastery</a> by Andy Budd</li>
+			<li><a href="http://www.transcendingcss.com/">Transcending CSS</a> by Andy Clarke</li>
+			<li><a href="http://www.zeldman.com/dwws/">Designing with standards, second edition</a> by Jeffery Zeldman</li>
+		</ul>
+	</li>
+	<li>Somes slides taken from <cite><a href="http://tantek.com/presentations/2005/09/elements-of-xhtml/">The Elements of Meaningful XHTML</a></cite> &mdash; <cite><a href="http://www.tantek.com/">Tantek &Ccedil;elik</a></cite></li>
+</ul>
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+.ACQuicktimeController { position:relative; width:470px; padding:5px 0; }
+
+.ACQuicktimeController div.control { width:25px; height:25px; text-indent:-999px; cursor:pointer; overflow:hidden; background:url(http://images.apple.com/global/elements/quicktime/playpause.png) center top no-repeat; behavior:url(/global/scripts/lib/iepngfix.htc); }
+.ACQuicktimeController div.control.play { }
+.ACQuicktimeController div.control.pause { background-position:center bottom; _background:url(http://images.apple.com/global/elements/quicktime/pause.png); }
+
+.ACQuicktimeController div.sliderPanel { position:absolute; top:12px; left:34px; height:9px; width:445px; }
+.ACQuicktimeController div.sliderPanel div.track { position:absolute; left:0; width:445px; height:9px; background:#000; text-align:left; }
+.ACQuicktimeController div.sliderPanel div.track div.loadedProgress { position:absolute; top:0; height:9px; background:#262626; overflow:hidden; }
+.ACQuicktimeController div.sliderPanel div.track div.trackProgress { position:absolute; height:9px; background:#4d4d4d; overflow:hidden; }
+.ACQuicktimeController div.sliderPanel div.track div.playHead { position:absolute; top:-7px; margin-left:-4px; width:11px; height:16px; background:url(http://images.apple.com/global/elements/quicktime/pointer.gif) no-repeat left top; cursor:pointer; }
